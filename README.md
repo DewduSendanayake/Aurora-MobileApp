@@ -26,7 +26,7 @@ Aurora isn’t just about productivity – it’s about creating a lovable space
 ## 🌸 The Aurora Promise
 Simple. Cute. Productive.
 
-Enjoy using **Aurora** – your adorable task companion! 🌟
+**Aurora** – your adorable task companion! 🌟
 
 ---
 
