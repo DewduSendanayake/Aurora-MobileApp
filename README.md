@@ -18,7 +18,7 @@ Aurora isn’t just about productivity – it’s about creating a lovable space
 
 ---
 
-## 🔒 License & Usage
+## 🔒 Usage
 **Aurora is a personal creation**. It’s not intended for public use or modification. Please respect that Aurora is not available for cloning, modifying, or distribution.
 
 ---
