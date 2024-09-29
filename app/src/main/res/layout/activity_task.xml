@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TaskActivity">
+
+    <!-- Task List Title -->
+    <TextView
+        android:id="@+id/taskListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/task_list_title"
+        android:textColor="@color/darkBrown"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Task Containers -->
+    <LinearLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskListTitle">
+        <!-- Dynamic task items will be added here programmatically -->
+    </LinearLayout>
+
+    <!-- Mushroom Icon -->
+    <ImageView
+        android:id="@+id/mushroomIcon"
+        android:layout_width="205dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="-18dp"
+        android:layout_marginBottom="105dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskContainer"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/aurora8" />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/darkBrown"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/navPomodoro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/pomodoro"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/navTasks"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/tasks"
+            android:src="@drawable/tasks" />
+
+        <ImageButton
+            android:id="@+id/navSettings"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/settings"
+            android:src="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/navProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="126dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="-18dp"
+        android:backgroundTint="@color/title_color"
+        android:text="@string/add_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mushroomIcon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

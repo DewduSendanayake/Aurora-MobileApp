@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Aurora</string>
+    <string name="appName">AURORA</string>
+    <string name="mainImage">logo</string>
+
+    <string name="back_button">Back</string>
+    <string name="title">Empower Your Day</string>
+    <string name="title2">Focus, Flow, Finish</string>
+    <string name="title3">Your Journey, Organized!</string>
+    <string name="description">Unlock a personalized productivity experience. With Aurora, each day shines brighter!</string>
+    <string name="description2">Seamlessly track tasks, set priorities, and achieve more. Let Aurora guide you through your goals.</string>
+    <string name="description3">From ideas to execution, stay in control. Aurora keeps everything at your fingertips.</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Get Started</string>
+    <string name="mushroom_image">Mushroom Image</string>
+    <string name="cloud_decoration">Cloud Decoration</string>
+
+    <string name="welcome">Welcome Back!</string>
+    <string name="welcome2">Create Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">User Name</string>
+    <string name="login">LOG IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="noac">No Account?</string>
+    <string name="yesac">Already Have An Account?</string>
+
+    <string name="start_focus">Select Task</string>
+    <string name="take_break">Take A Break</string>
+    <string name="startfocus">Start Timer</string>
+    <string name="pomodoro">Pomodoro</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_task">+</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="timervalue">25:00</string>
+    <string name="reset">Reset Timer</string>
+
+    <string name="task_list_title">Tasks List</string>
+    <string name="task_placeholder">Your task here...</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string name="create_task_title">Create New Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_title_hint">Enter task title</string>
+    <string name="due_date">Due Date</string>
+    <string name="due_date_hint">Enter due date</string>
+    <string name="priority">Priority</string>
+    <string name="priority_hint">Enter priority level</string>
+    <string name="notes">Notes</string>
+    <string name="notes_hint">Add notes here</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="myname">Dewdu Sendanayake</string>
+    <string name="tasks_completed">20 TASKS</string>
+    <string name="time_spent">3 HOURS</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="logout">LOG OUT</string>
+    <string name="delete_account">Delete Account?</string>
+
+    <string name="newsettings">Settings</string>
+    <string name="adjust_timer">Adjust the Time in Timer</string>
+    <string name="timer_value">: 25 min</string>
+    <string name="task_name">Task Name</string>
+    <string name="aurora">AURORA</string>
+    <string name="add_widget">Add Widget to Home Screen</string>
+    <string name="msg">Procrastination is the art of keeping up with yesterday — Try finishing a task!</string>
+    <string name="set_reminder">Set Reminder</string>
+
+    <string-array name="timer_options">
+        <item>25 min (Default)</item>
+        <item>30 min</item>
+        <item>45 min</item>
+        <item>60 min</item>
+    </string-array>
+</resources>

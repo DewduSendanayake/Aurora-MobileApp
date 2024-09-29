@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:backgroundTint="@color/pink"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:letterSpacing="0.05"
+        android:paddingBottom="10dp"
+        android:text="Upcoming Tasks"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Task List Section -->
+    <TextView
+        android:id="@+id/widget_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/background_color"
+        android:lineSpacingExtra="4dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding2Activity">
+
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" />
+
+<ImageView
+    android:id="@+id/redSquare"
+    android:layout_width="433dp"
+    android:layout_height="242dp"
+    android:layout_marginBottom="-248dp"
+    android:contentDescription="@null"
+    android:scaleType="fitXY"
+    android:src="@drawable/redsquare"
+    app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/relativeLayout2"
+    android:layout_width="414dp"
+    android:layout_height="757dp"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="@+id/view"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/redSquare">
+
+    <ImageView
+        android:id="@+id/mushroomImage"
+        android:layout_width="346dp"
+        android:layout_height="508dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/mushroom_image"
+        android:src="@drawable/aurora14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/description2"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="134dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/button_color"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/skipButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mushroomImage" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:text="@string/skip"
+        android:textColor="@color/button_color"
+        app:layout_constraintBottom_toTopOf="@+id/bottomCloudLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton" />
+
+    <ImageView
+        android:id="@+id/bottomCloudLeft"
+        android:layout_width="197dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="47dp"
+        android:contentDescription="@string/cloud_decoration"
+        android:rotationX="6"
+        android:rotationY="180"
+        android:src="@drawable/redcloud"
+        app:layout_constraintEnd_toStartOf="@+id/bottomCloudRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skipButton" />
+
+    <ImageView
+        android:id="@+id/bottomCloudRight"
+        android:layout_width="227dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="-50dp"
+        android:contentDescription="@string/cloud_decoration"
+        android:src="@drawable/redcloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skipButton" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/title2"
+        android:textColor="@color/background_color"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".AddTaskActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/createTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/create_task_title"
+        android:textColor="@color/darkBrown"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Mushroom Icon -->
+    <ImageView
+        android:id="@+id/mushroomIcon"
+        android:layout_width="157dp"
+        android:layout_height="151dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/createTaskTitle"
+        app:srcCompat="@drawable/aurora18" />
+
+    <!-- Task Form Fields -->
+    <LinearLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mushroomIcon">
+
+        <!-- Task Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/task_title"
+            android:textColor="@color/darkBrown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/taskTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonBrown"
+            android:hint="@string/task_title_hint"
+            android:padding="10dp"
+            android:textColor="@color/background_color"
+            android:textColorHint="@color/background_color"
+            android:textSize="16sp" />
+
+        <!-- Due Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/due_date"
+            android:textColor="@color/darkBrown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dueDate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonBrown"
+            android:hint="@string/due_date_hint"
+            android:padding="10dp"
+            android:textColor="@color/background_color"
+            android:textColorHint="@color/background_color"
+            android:textSize="16sp" />
+
+        <!-- Priority -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/priority"
+            android:textColor="@color/darkBrown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/priority"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonBrown"
+            android:hint="@string/priority_hint"
+            android:padding="10dp"
+            android:textColor="@color/background_color"
+            android:textColorHint="@color/background_color"
+            android:textSize="16sp" />
+
+        <!-- Notes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/notes"
+            android:textColor="@color/darkBrown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonBrown"
+            android:hint="@string/notes_hint"
+            android:padding="10dp"
+            android:textColor="@color/background_color"
+            android:textColorHint="@color/background_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Set Reminder Button -->
+    <Button
+        android:id="@+id/setReminderButton"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/title_color"
+        android:text="@string/set_reminder"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskContainer" />
+
+    <!-- Submit Button -->
+
+    <Button
+        android:id="@+id/submitTaskButton"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/submit"
+        android:textColor="@color/title_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskContainer" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/cancel"
+        android:textColor="@color/buttonBrown"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskContainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

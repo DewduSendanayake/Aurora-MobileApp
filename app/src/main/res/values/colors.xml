@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="extra_transparent">#00000000</color>
+    <color name="lighttBackground">#FDF0E1</color>
+    <color name="lightttBackground">#FFF3E4</color>
+    <color name="card_background">#FFE7E1</color>
+
+    <color name="background_color">#F2DED4</color>
+    <color name="lightBackground">#FFEBD9</color>
+    <color name="pink">#ED9790</color>
+    <color name="textt_color">#9C4A4A</color>
+    <color name="lightPink">#F5A9A9</color>
+    <color name="hint_color">#B68A8A</color>
+
+    <color name="title_color">#AC392C</color>
+    <color name="text_color">#8A4A42</color>
+    <color name="button_color">#AC392C</color>
+    <color name="darkBrown">#d14230</color>
+    <color name="deepbrown">#783E37</color>
+    <color name="darkkBrown">#A05A34</color>
+    <color name="buttonBrown">#D15B4D</color>
+    <color name="Brown">#7D3F1B</color>
+    <color name="darkRed">#A63A28</color>
+    <color name="square_color">#D04F41</color>
+</resources>

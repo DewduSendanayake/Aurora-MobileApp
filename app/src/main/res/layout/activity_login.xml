@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color" />
+
+    <ImageView
+        android:id="@+id/redSquare"
+        android:layout_width="426dp"
+        android:layout_height="638dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_marginBottom="-70dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/redsquare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="414dp"
+        android:layout_height="757dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redSquare">
+
+        <ImageView
+            android:id="@+id/mushroomImage"
+            android:layout_width="263dp"
+            android:layout_height="372dp"
+            android:layout_marginTop="-70dp"
+            android:contentDescription="@string/mushroom_image"
+            android:src="@drawable/aurora10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="@color/background_color"
+            android:text="@string/login"
+            android:textColor="@color/title_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+        <Button
+            android:id="@+id/skipButton"
+            android:layout_width="176dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginBottom="-100dp"
+            android:background="@android:color/transparent"
+            android:text="@string/noac"
+            android:textColor="@color/background_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomCloudLeft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextButton"
+            app:layout_constraintVertical_bias="0.723" />
+
+        <ImageView
+            android:id="@+id/bottomCloudLeft"
+            android:layout_width="197dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="-23dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="@string/cloud_decoration"
+            android:rotationX="6"
+            android:rotationY="180"
+            android:src="@drawable/whitecloud"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bottomCloudRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skipButton" />
+
+        <ImageView
+            android:id="@+id/bottomCloudRight"
+            android:layout_width="227dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="-40dp"
+            android:layout_marginBottom="78dp"
+            android:contentDescription="@string/cloud_decoration"
+            android:src="@drawable/whitecloud"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skipButton" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="120dp"
+            android:text="@string/email"
+            android:textColor="@color/background_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintEnd_toStartOf="@+id/mushroomImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-70dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/password"
+            android:textColor="@color/background_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mushroomImage"
+            app:layout_constraintVertical_bias="0.16" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="327dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginBottom="-62dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.381"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editTextTextPW"
+            android:layout_width="327dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="94dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/nextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.381"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-700dp"
+        android:text="@string/welcome"
+        android:textColor="@color/title_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
