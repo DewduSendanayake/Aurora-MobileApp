@@ -1,5 +1,5 @@
 # 🌸 Aurora 🌸
-**The Adorable Productivity Companion**
+**Your Adorable Productivity Companion**
 
 Welcome to **Aurora**, the cutest little productivity app you'll ever meet! Designed with simplicity and charm, Aurora is here to brighten up your day, help you manage your tasks with ease, and make staying organized feel delightful. Whether it’s setting reminders or keeping track of your to-dos, Aurora has your back – with a sprinkle of charm.
 
